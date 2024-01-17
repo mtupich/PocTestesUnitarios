@@ -5,34 +5,29 @@
 //  Created by Maria Tupich on 16/01/24.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import Course
 
-final class StringUtilsSpec: XCTestCase {
+class StringUtilsSpec: QuickSpec {
     
-    func testIsValidEmail() {
-        let email = "curso@gmail.com"
-        let value = email.isValidEmail()
-        
-        XCTAssert(value == true)
+    override class func spec() {
+        describe("StringUtilsSpec") {
+            context("Is a valid email") {
+                
+                it("Valid email") {
+                    let email = "curso@gmail.com"
+                    let isValidEmail = email.isValidEmail()
+                    expect(isValidEmail).to(beTrue())
+                }
+                
+                it("Invalid email") {
+                    let text = "Olá Mundo"
+                    let isValidEmail = text.isValidEmail()
+                    expect(isValidEmail).to(beFalse())
+                }
+                
+            }
+        }
     }
-    
-    func testRemoveWhiteSpace() {
-        let text = "Olá Mundo"
-        let newText = text.removeWhitespace()
-        
-        XCTAssert(true)
-    }
-    
-    func testReplaceFunction(){
-        let text = "Olá Mundo"
-        let value = text.replace(string: text, replacement: "")
-        
-        XCTAssert(value.contains("") == true)
-        
-        
-    }
-
 }
-
-
