@@ -13,9 +13,12 @@
 		435E968F2B56E86E00F49693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435E968D2B56E86E00F49693 /* Main.storyboard */; };
 		435E96912B56E87000F49693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435E96902B56E87000F49693 /* Assets.xcassets */; };
 		435E96942B56E87000F49693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435E96922B56E87000F49693 /* LaunchScreen.storyboard */; };
-		435E969F2B56E87000F49693 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E969E2B56E87000F49693 /* CourseTests.swift */; };
-		435E96A92B56E87000F49693 /* CourseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96A82B56E87000F49693 /* CourseUITests.swift */; };
-		435E96AB2B56E87000F49693 /* CourseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96AA2B56E87000F49693 /* CourseUITestsLaunchTests.swift */; };
+		435E96BC2B56EF4C00F49693 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96BB2B56EF4C00F49693 /* CourseTests.swift */; };
+		435E96BF2B56F3FB00F49693 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96BE2B56F3FB00F49693 /* StringUtils.swift */; };
+		435E96C12B56F75D00F49693 /* StringUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96C02B56F75D00F49693 /* StringUtilsSpec.swift */; };
+		435E96C52B56FD1200F49693 /* CourseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96C42B56FD1200F49693 /* CourseUITests.swift */; };
+		435E96C72B570B5A00F49693 /* AccountBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96C62B570B5A00F49693 /* AccountBalance.swift */; };
+		435E96C92B570E4400F49693 /* AccountBalanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E96C82B570E4400F49693 /* AccountBalanceSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +48,14 @@
 		435E96932B56E87000F49693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435E96952B56E87000F49693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435E969A2B56E87000F49693 /* CourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		435E969E2B56E87000F49693 /* CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
 		435E96A42B56E87000F49693 /* CourseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		435E96A82B56E87000F49693 /* CourseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUITests.swift; sourceTree = "<group>"; };
-		435E96AA2B56E87000F49693 /* CourseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		435E96BB2B56EF4C00F49693 /* CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
+		435E96BE2B56F3FB00F49693 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		435E96C02B56F75D00F49693 /* StringUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilsSpec.swift; sourceTree = "<group>"; };
+		435E96C32B56FD1200F49693 /* CourseUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CourseUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		435E96C42B56FD1200F49693 /* CourseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUITests.swift; sourceTree = "<group>"; };
+		435E96C62B570B5A00F49693 /* AccountBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalance.swift; sourceTree = "<group>"; };
+		435E96C82B570E4400F49693 /* AccountBalanceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				435E96862B56E86D00F49693 /* Course */,
-				435E969D2B56E87000F49693 /* CourseTests */,
-				435E96A72B56E87000F49693 /* CourseUITests */,
 				435E96852B56E86D00F49693 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +104,8 @@
 		435E96862B56E86D00F49693 /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				435E96C62B570B5A00F49693 /* AccountBalance.swift */,
+				435E96BE2B56F3FB00F49693 /* StringUtils.swift */,
 				435E96872B56E86D00F49693 /* AppDelegate.swift */,
 				435E96892B56E86D00F49693 /* SceneDelegate.swift */,
 				435E968B2B56E86D00F49693 /* ViewController.swift */,
@@ -106,23 +113,27 @@
 				435E96902B56E87000F49693 /* Assets.xcassets */,
 				435E96922B56E87000F49693 /* LaunchScreen.storyboard */,
 				435E96952B56E87000F49693 /* Info.plist */,
+				435E96C22B56FCD200F49693 /* CourseUITests */,
+				435E96BD2B56EF6300F49693 /* CourseTests */,
 			);
 			path = Course;
 			sourceTree = "<group>";
 		};
-		435E969D2B56E87000F49693 /* CourseTests */ = {
+		435E96BD2B56EF6300F49693 /* CourseTests */ = {
 			isa = PBXGroup;
 			children = (
-				435E969E2B56E87000F49693 /* CourseTests.swift */,
+				435E96BB2B56EF4C00F49693 /* CourseTests.swift */,
+				435E96C02B56F75D00F49693 /* StringUtilsSpec.swift */,
+				435E96C82B570E4400F49693 /* AccountBalanceSpec.swift */,
 			);
 			path = CourseTests;
 			sourceTree = "<group>";
 		};
-		435E96A72B56E87000F49693 /* CourseUITests */ = {
+		435E96C22B56FCD200F49693 /* CourseUITests */ = {
 			isa = PBXGroup;
 			children = (
-				435E96A82B56E87000F49693 /* CourseUITests.swift */,
-				435E96AA2B56E87000F49693 /* CourseUITestsLaunchTests.swift */,
+				435E96C42B56FD1200F49693 /* CourseUITests.swift */,
+				435E96C32B56FD1200F49693 /* CourseUITests-Bridging-Header.h */,
 			);
 			path = CourseUITests;
 			sourceTree = "<group>";
@@ -198,10 +209,12 @@
 					};
 					435E96992B56E87000F49693 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 						TestTargetID = 435E96832B56E86D00F49693;
 					};
 					435E96A32B56E87000F49693 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 						TestTargetID = 435E96832B56E86D00F49693;
 					};
 				};
@@ -258,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435E96BF2B56F3FB00F49693 /* StringUtils.swift in Sources */,
 				435E968C2B56E86D00F49693 /* ViewController.swift in Sources */,
 				435E96882B56E86D00F49693 /* AppDelegate.swift in Sources */,
 				435E968A2B56E86D00F49693 /* SceneDelegate.swift in Sources */,
+				435E96C72B570B5A00F49693 /* AccountBalance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435E969F2B56E87000F49693 /* CourseTests.swift in Sources */,
+				435E96BC2B56EF4C00F49693 /* CourseTests.swift in Sources */,
+				435E96C12B56F75D00F49693 /* StringUtilsSpec.swift in Sources */,
+				435E96C92B570E4400F49693 /* AccountBalanceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435E96A92B56E87000F49693 /* CourseUITests.swift in Sources */,
-				435E96AB2B56E87000F49693 /* CourseUITestsLaunchTests.swift in Sources */,
+				435E96C52B56FD1200F49693 /* CourseUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5T9TKZ5MKP;
@@ -513,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = met.CourseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Course.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Course";
@@ -524,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5T9TKZ5MKP;
@@ -543,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5T9TKZ5MKP;
@@ -551,6 +571,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = met.CourseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Course/CourseUITests/CourseUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Course;
@@ -561,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5T9TKZ5MKP;
@@ -569,6 +592,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = met.CourseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Course/CourseUITests/CourseUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Course;
